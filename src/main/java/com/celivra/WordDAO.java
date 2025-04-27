@@ -8,13 +8,15 @@ import java.util.List;
 
 public class WordDAO {
     Connection connection = DBUtil.getConnection();
-    public void insertWord(Word word) {
+    public boolean insertWord(Word word) {
         try(PreparedStatement ps = connection.prepareStatement("insert into word(english, chinese) values(?, ?)")) {
             ps.setString(1, word.getEnglish());
             ps.setString(2, word.getChinese());
             ResultSet rs = ps.executeQuery();
+            return true;
         }catch (SQLException e) {
             System.out.println(e);
+            return false;
         }
     }
     public List<Word> getAllWords() {

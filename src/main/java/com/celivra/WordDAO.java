@@ -28,6 +28,7 @@ public class WordDAO {
                 word.setId(rs.getLong("id"));
                 word.setEnglish(rs.getString("english"));
                 word.setChinese(rs.getString("chinese"));
+                words.add(word);
             }
         }catch (SQLException e) {
             System.out.println(e);

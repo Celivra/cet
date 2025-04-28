@@ -27,7 +27,7 @@ CREATE TABLE `word` (
   `english` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `chinese` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `word` (
 
 LOCK TABLES `word` WRITE;
 /*!40000 ALTER TABLE `word` DISABLE KEYS */;
-INSERT INTO `word` VALUES (1,'actually','實際上'),(2,'deteriorate','惡化,品質下降'),(3,'rarely','很少,難得'),(4,'approximately','大概'),(5,'equivalent','相同的,相等的'),(6,'sample','樣本'),(7,'assume','以為,想當然的認為'),(8,'journey','旅程,旅行'),(9,'undermine','暗中破壞,在...下挖坑道'),(10,'component','n.組件,a.組成的');
+INSERT INTO `word` VALUES (1,'actually','實際上'),(2,'deteriorate','惡化,品質下降'),(3,'rarely','很少,難得'),(4,'approximately','大概'),(5,'equivalent','相同的,相等的'),(6,'sample','樣本'),(7,'assume','以為,想當然的認為'),(8,'journey','旅程,旅行'),(9,'undermine','暗中破壞,在...下挖坑道'),(10,'component','n.組件,a.組成的'),(11,'literary','文學的'),(12,'unique','獨一無二的'),(13,'comprehend','理解'),(14,'perform','履行,執行'),(15,'unit','單元'),(16,'accurate','準確的'),(17,'establish','設立,建立,創辦'),(18,'observe','看到,注意到'),(19,'extremely','極端的'),(20,'artificial','人工的,嬌柔造作的');
 /*!40000 ALTER TABLE `word` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-28 13:31:32
+-- Dump completed on 2025-04-28 17:16:06
